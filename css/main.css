@@ -1393,6 +1393,7 @@ ul {
   right: 0;
   bottom: 0;
   z-index: 50;
+  max-width: 585px;
   background: #102842;
   padding: 38px 30px 52px; }
 
