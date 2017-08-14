@@ -37,6 +37,8 @@ ul {
   transition: .3s;
 }
 .header_fixed {
+  // TODO: Remove
+  // display: none;
   background: #FFF;
   padding-top: 5px;
   .header__logo {
@@ -254,7 +256,7 @@ ul {
 }
 .man {
   padding-top: 26px;
-  height: 625px;
+  // height: 625px;
   position: relative;
   overflow: hidden;
 }
@@ -279,13 +281,21 @@ ul {
   right: -150px;
 }
 .man__container {
-  height: 100%;
-  background: url(../img/man-bg.jpg) right bottom no-repeat;
+  // height: 100%;
+  // background: url(../img/man-bg.jpg) right bottom no-repeat;
   position: relative;
 }
-.man__container_discuss {
-  background-image: url(../img/man-bg2.jpg);
+.man__img-wrapper {
+  position: relative;
 }
+.man__room {
+  position: relative;
+  left: 218px;
+  display: block;
+}
+// .man__container_discuss {
+//   background-image: url(../img/man-bg2.jpg);
+// }
 .man__man-img {
   z-index: 20;
   position: absolute;
@@ -320,6 +330,12 @@ ul {
     margin-bottom: 0;
     padding-left: 30px;
   }
+}
+.man__quote-img {
+  display: none;
+}
+.man__quote-icon {
+  width: 32px;
 }
 .man__order {
   width: 303px;
