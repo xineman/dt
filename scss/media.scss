@@ -345,7 +345,88 @@
   }
   .project__text-block__right {
     flex: 0 0 55%;
-
+  }
+  .prices {
+    padding: 67px 20px 100px;
+  }
+  .prices__list-tablet {
+    background: $dark;
+    padding-top: 38px;
+    // padding-bottom: 58px;
+  }
+  .prices__offer:nth-child(2) {
+    bottom: initial;
+  }
+  .prices__tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+  .prices__tab {
+    font: 500 40px $bebasNeue;
+    color: #FFF;
+    cursor: pointer;
+  }
+  .prices__tab_active {
+    color: $blue;
+  }
+  .prices__offer {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-bottom: 58px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+  }
+  .prices__params {
+    height: auto;
+    column-count: 2;
+  }
+  .prices__offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+  }
+  .prices__offer-name-wrapper {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+  .prices__offer-header-line {
+    flex-grow: 1;
+    height: 1px;
+    background: #fbead6;
+    display: block;
+    margin: 0 10px;
+  }
+  .prices__offer-name {
+    left: 0;
+    &::after {
+      display: none;
+      width: 22%;
+      left: initial;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .prices__offer_active {
+    display: block;
+  }
+  .prices__title {
+    margin-bottom: 65px;
+    &::after, &::before {
+      display: none;
+    }
+  }
+  .prices__price {
+    margin-bottom: 0;
+    font: 500 47px $bebasNeue;
+  }
+  .prices__price-currency {
+    font: 400 32px $myriad;
   }
 
 }
@@ -488,6 +569,19 @@
   .project__params {
     padding-left: 17px;
     border-left: 2px solid $dark;
+  }
+  .prices__tabs {
+    display: none;
+  }
+  .prices__list-tablet {
+    padding-top: 0;
+    background: transparent;
+  }
+  .prices__list {
+    display: block;
+  }
+  .prices__offer  {
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {

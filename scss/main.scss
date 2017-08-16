@@ -243,7 +243,7 @@ ul {
   background: $blue;
   color: #FFF;
   cursor: pointer;
-  border-radius: 29px;
+  border-radius: 59px;
   padding: 0 90px;
   display: inline-block;
 
@@ -616,6 +616,12 @@ ul {
   padding-top: 70px;
   padding-bottom: 138px;
 }
+.prices__tabs {
+  display: none;
+}
+.prices__offer-header-line {
+  display: none;
+}
 .prices__title {
   font: 500 60px $bebasNeue;
   text-align: center;
@@ -653,9 +659,10 @@ ul {
 .prices__offer {
   background: $dark;
   width: 373px;
-  height: 643px;
+  // height: 643px;
   margin: 0 10px;
   padding-top: 47px;
+  padding-bottom: 78px;
   // overflow: hidden;
   position: relative;
   &:nth-child(2) {

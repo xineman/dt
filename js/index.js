@@ -50,4 +50,10 @@ $(function() {
   $(".header__menu-close").click(function() {
     $(".header__menu-wrapper").removeClass("active");
   });
+  $(".prices__tab").click(function() {
+    $(".prices__tab").removeClass("prices__tab_active");
+    $(this).addClass("prices__tab_active");
+    $(".prices__offer").removeClass("prices__offer_active");
+    $(".prices__offer").eq($(this).index()).addClass("prices__offer_active");
+  });
 });
