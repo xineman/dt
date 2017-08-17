@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Дизайн-бюро</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 </head>
 
@@ -153,13 +154,14 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
+            <!-- <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a> -->
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__company-container">
             <p class="project__company-name">Дизайн-бюро <br/> интерьеров</p>
@@ -171,13 +173,13 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
         </div>
         <div class="project__text-wrapper">
@@ -207,13 +209,13 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__company-container">
             <p class="project__company-name project__company-name_white">Дизайн-бюро <br/> интерьеров</p>
@@ -225,13 +227,13 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
         </div>
         <div class="project__text-wrapper project__text-wrapper_second">
@@ -267,13 +269,13 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__company-container">
             <p class="project__company-name">Дизайн-бюро <br/> интерьеров</p>
@@ -285,13 +287,13 @@
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
           <div class="project__image-container">
             <div class="project__overlay">
               <img src="./img/plus.svg" alt="">
             </div>
-            <img class="project__image" src="./img/project-img.jpg" alt="" />
+            <a class="project__image-link" data-fancybox="gallery" href="img/project-img-lg.jpg"><img class="project__image" src="./img/project-img.jpg"></a>
           </div>
         </div>
         <div class="project__text-wrapper project__text-wrapper_third">
@@ -313,7 +315,7 @@
     </div>
   </article>
   <article class="prices">
-    <h2 class="prices__title">Выберите сами, каким будет <br/>
+    <h2 class="prices__title">Выберите сами, <span class="prices__title_smaller">каким будет</span> <br class="prices__title_br"/>
         <span class="prices__title_bold">ваш дизайн проект</span>
       </h2>
     <div class="prices__list-tablet">
@@ -327,72 +329,84 @@
           <div class="prices__offer-header">
             <div class="prices__offer-name-wrapper">
               <h3 class="prices__offer-name">Все включено”</h3>
+              <img class="prices__collapse prices__collapse_plus" src="./img/collapse/+.svg" alt="" />
+              <img class="prices__collapse prices__collapse_minus" src="./img/collapse/-.png" alt="" />
             </div>
             <div class="prices__offer-header-line">
             </div>
             <p class="prices__price">4 900 <span class="prices__price-currency">руб/м<sup>2</sup></span></p>
           </div>
-          <ul class="prices__params">
-            <li class="prices__param">Составление тех задания</li>
-            <li class="prices__param">Обмерочный план</li>
-            <li class="prices__param">План перепланировки</li>
-            <li class="prices__param">План пола</li>
-            <li class="prices__param">План мебели</li>
-            <li class="prices__param">План электрики</li>
-            <li class="prices__param">План потолков</li>
-            <li class="prices__param">План светового оборудования</li>
-            <li class="prices__param">План демонтажа</li>
-            <li class="prices__param">План монтажа</li>
-            <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
-            <li class="prices__param">Развертка встроенных шкафов </li>
-          </ul>
-          <p class="prices__btn btn">Скачать пример проекта</p>
+          <div class="prices__offer-content">
+            <ul class="prices__params">
+              <li class="prices__param">Составление тех задания</li>
+              <li class="prices__param">Обмерочный план</li>
+              <li class="prices__param">План перепланировки</li>
+              <li class="prices__param">План пола</li>
+              <li class="prices__param">План мебели</li>
+              <li class="prices__param">План электрики</li>
+              <li class="prices__param">План потолков</li>
+              <li class="prices__param">План светового оборудования</li>
+              <li class="prices__param">План демонтажа</li>
+              <li class="prices__param">План монтажа</li>
+              <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
+              <li class="prices__param">Развертка встроенных шкафов </li>
+            </ul>
+            <p class="prices__btn btn">Скачать пример проекта</p>
+          </div>
         </li>
         <li class="prices__offer">
           <div class="prices__offer-header">
             <div class="prices__offer-name-wrapper">
               <h3 class="prices__offer-name">стандарт”</h3>
+              <img class="prices__collapse prices__collapse_plus" src="./img/collapse/+.svg" alt="" />
+              <img class="prices__collapse prices__collapse_minus" src="./img/collapse/-.png" alt="" />
             </div>
             <div class="prices__offer-header-line">
             </div>
             <p class="prices__price">3 900 <span class="prices__price-currency">руб/м<sup>2</sup></span></p>
           </div>
-          <ul class="prices__params">
-            <li class="prices__param">Составление тех задания</li>
-            <li class="prices__param">Обмерочный план</li>
-            <li class="prices__param">План перепланировки</li>
-            <li class="prices__param">План пола</li>
-            <li class="prices__param">План мебели</li>
-            <li class="prices__param">План электрики</li>
-            <li class="prices__param">План потолков</li>
-            <li class="prices__param">План светового оборудования</li>
-            <li class="prices__param">План демонтажа</li>
-            <li class="prices__param">План монтажа</li>
-            <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
-            <li class="prices__param">Развертка встроенных шкафов </li>
-          </ul>
-          <p class="prices__btn btn">Скачать пример проекта</p>
+          <div class="prices__offer-content">
+            <ul class="prices__params">
+              <li class="prices__param">Составление тех задания</li>
+              <li class="prices__param">Обмерочный план</li>
+              <li class="prices__param">План перепланировки</li>
+              <li class="prices__param">План пола</li>
+              <li class="prices__param">План мебели</li>
+              <li class="prices__param">План электрики</li>
+              <li class="prices__param">План потолков</li>
+              <li class="prices__param">План светового оборудования</li>
+              <li class="prices__param">План демонтажа</li>
+              <li class="prices__param">План монтажа</li>
+              <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
+              <li class="prices__param">Развертка встроенных шкафов </li>
+            </ul>
+            <p class="prices__btn btn">Скачать пример проекта</p>
+          </div>
         </li>
         <li class="prices__offer">
           <div class="prices__offer-header">
             <div class="prices__offer-name-wrapper">
               <h3 class="prices__offer-name">все необходимое”</h3>
+              <img class="prices__collapse prices__collapse_plus" src="./img/collapse/+.svg" alt="" />
+              <img class="prices__collapse prices__collapse_minus" src="./img/collapse/-.png" alt="" />
             </div>
             <div class="prices__offer-header-line">
             </div>
             <p class="prices__price">2 900 <span class="prices__price-currency">руб/м<sup>2</sup></span></p>
           </div>
-          <ul class="prices__params">
-            <li class="prices__param">Составление тех задания</li>
-            <li class="prices__param">Обмерочный план</li>
-            <li class="prices__param">План перепланировки</li>
-            <li class="prices__param">План пола</li>
-            <li class="prices__param">План мебели</li>
-            <li class="prices__param">План электрики</li>
-            <li class="prices__param">План потолков</li>
-            <li class="prices__param">План светового оборудования</li>
-          </ul>
-          <p class="prices__btn btn">Скачать пример проекта</p>
+          <div class="prices__offer-content">
+            <ul class="prices__params">
+              <li class="prices__param">Составление тех задания</li>
+              <li class="prices__param">Обмерочный план</li>
+              <li class="prices__param">План перепланировки</li>
+              <li class="prices__param">План пола</li>
+              <li class="prices__param">План мебели</li>
+              <li class="prices__param">План электрики</li>
+              <li class="prices__param">План потолков</li>
+              <li class="prices__param">План светового оборудования</li>
+            </ul>
+            <p class="prices__btn btn">Скачать пример проекта</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -400,8 +414,8 @@
   <article class="contact">
     <div class="contact__container container">
       <div class="contact__descr">
-        <h3 class="contact__title">Заявка на <strong class="contact__title_bold">бесплатную</strong> <br/> консультацию</h3>
-        <p class="contact__text"><strong class="contact__text_strong">Оставьте заявку</strong> на бесплатную консультацию прямо сейчас <strong class="contact__text_strong">и мы свяжемся с Вами</strong> в течение дня!</p>
+        <h3 class="contact__title"><span class="contact__title_large">Заявка</span> на <strong class="contact__title_bold">бесплатную</strong> консультацию</h3>
+        <p class="contact__text"><strong class="contact__text_strong contact__text_large">Оставьте заявку</strong> на бесплатную консультацию прямо сейчас <strong class="contact__text_strong">и мы свяжемся с Вами</strong> в течение дня!</p>
       </div>
       <div class="contact__form-wrapper">
         <form class="contact__form" action="index.html" method="post">
@@ -450,14 +464,17 @@
   </section>
   <section id="map" class="map">
     <div class="map__container">
-      <img class="map__home-icon" src="./img/icons/home.svg" alt="" />
-      <p class="map__text">119311, Россия, Москва, проспект Вернадского, дом 6</p>
+      <div class="map__address-wrapper">
+
+        <img class="map__home-icon" src="./img/icons/home.svg" alt="" />
+        <p class="map__text">119311, Россия, Москва, проспект Вернадского, дом 6</p>
+      </div>
       <ul class="map_contacts">
         <li class="map__contact">
           <img class="map__home-icon" src="./img/icons/phone.svg" alt="" />
           <a href="tel:+74950000000" class="map__text">+7 (495) 000 00 00</a>
         </li>
-        <li class="map__contact">
+        <li class="map__contact map__contact_second">
           <img class="map__home-icon" src="./img/icons/phone.svg" alt="" />
           <a href="tel:+74950000000" class="map__text">+7 (495) 000 00 00</a>
         </li>
@@ -476,6 +493,7 @@
     </div>
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
   <script src="./js/slick.min.js" charset="utf-8"></script>
   <script src="./js/index.js" charset="utf-8"></script>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">

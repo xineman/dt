@@ -1,3 +1,4 @@
+
 $(function() {
   $(".top-slider").slick({
     slidesToShow: 1,
@@ -55,5 +56,49 @@ $(function() {
     $(this).addClass("prices__tab_active");
     $(".prices__offer").removeClass("prices__offer_active");
     $(".prices__offer").eq($(this).index()).addClass("prices__offer_active");
+  });
+
+  var mobile = false;
+  if (window.innerWidth<=668) {
+    mobile = true;
+    $(".prices__offer").find(".prices__offer-content").slideUp();
+    $(".prices__offer").find(".prices__price").slideUp();
+    $(".prices__offer").removeClass("prices__offer_active");
+    $(".prices__offer").click(function() {
+      $(".prices__offer").not(this).find(".prices__offer-content").slideUp();
+      $(this).find(".prices__offer-content").slideToggle();
+      $(".prices__offer").not(this).find(".prices__price").slideUp();
+      $(this).find(".prices__price").slideToggle();
+      $(".prices__offer").not(this).removeClass("prices__offer_active");
+      $(this).toggleClass("prices__offer_active");
+    });
+  }
+  $(window).resize(function() {
+    if (window.innerWidth<=668) {
+      if (!mobile) {
+        $(".prices__offer").find(".prices__offer-content").slideUp();
+        $(".prices__offer").find(".prices__price").slideUp();
+        $(".prices__offer").removeClass("prices__offer_active");
+        console.log("there");
+        console.log(mobile);
+        mobile = true;
+        // $('.prices__offer').addClass("prices__offer_mobile");
+        $(".prices__offer").click(function() {
+          $(".prices__offer").not(this).find(".prices__offer-content").slideUp();
+          $(this).find(".prices__offer-content").slideToggle();
+          $(".prices__offer").not(this).find(".prices__price").slideUp();
+          $(this).find(".prices__price").slideToggle();
+          $(".prices__offer").not(this).removeClass("prices__offer_active");
+          $(this).toggleClass("prices__offer_active");
+        });
+      }
+    } else {
+      mobile = false;
+      $(".prices__offer").off();
+      $('.prices__offer').removeClass("prices__offer_active");
+      $(".prices__offer").eq($(".prices__tab_active").index()).addClass("prices__offer_active");
+      $(".prices__offer").find(".prices__offer-content").slideDown();
+      $(".prices__offer").find(".prices__price").slideDown();
+    }
   });
 });
