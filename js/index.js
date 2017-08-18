@@ -101,6 +101,16 @@ $(function() {
       $(".prices__offer").find(".prices__price").slideDown();
     }
   });
+  $(".order-btn, .order-btn__mobile, .man__order").click(function() {
+    $(".popup").addClass("shown");
+    $("body").addClass("stop");
+  });
+  $(document).click(function(e) {
+    if ($(e.target).hasClass("popup")) {
+      $(".popup").removeClass("shown");
+      $("body").removeClass("stop");
+    }
+  });
   var params = document.getElementsByClassName('prices__params');
   for (var i = 0; i < params.length; i++) {
     new SimpleBar(params[i], { autoHide: false });

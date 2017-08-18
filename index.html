@@ -502,12 +502,22 @@
       </div>
     </div>
   </section>
+  <div class="popup">
+    <div class="popup-wrapper">
+      <h2 class="popup__title">Обсудить проект</h2>
+      <form class="contact__form" action="index.html" method="post">
+        <input class="popup__input" type="text" name="" value="" placeholder="Имя" required/>
+        <input class="popup__input" type="text" name="" value="" placeholder="Телефон" required />
+        <input type="submit" class="contact__submit btn" value="Отправить заявку" />
+      </form>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
   <script src="./js/slick.min.js" charset="utf-8"></script>
   <script src="./js/simplebar.js" charset="utf-8"></script>
   <script src="./js/index.js" charset="utf-8"></script>
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
     <script type="text/javascript">
         ymaps.ready(init);
@@ -528,7 +538,7 @@
               });
             myMap.geoObjects.add(myPlacemark);
         }
-    </script> -->
+    </script>
 </body>
 
 </html>

@@ -1489,6 +1489,50 @@ ul {
     right: 0;
     width: 100%;
   }
+  .popup {
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-wrapper {
+    background: #FFF;
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+  .popup.shown {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .popup__title {
+    font: 500 48px BebasNeue, sans-serif;
+    color: #102842;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .popup__input {
+    border: 1px solid #4876c3;
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: transparent;
+    font: 400 18px MYRIADPRO, sans-serif;
+  }
+  body.stop {
+    overflow: hidden;
+    margin-right: 17px;
+  }
 
 @media screen and (max-height: 930px) {
   .top__container {
