@@ -101,4 +101,8 @@ $(function() {
       $(".prices__offer").find(".prices__price").slideDown();
     }
   });
+  var params = document.getElementsByClassName('prices__params');
+  for (var i = 0; i < params.length; i++) {
+    new SimpleBar(params[i], { autoHide: false });
+  }
 });

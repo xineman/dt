@@ -136,6 +136,7 @@ ul {
     background: #FFF;
     border-radius: 50%;
     margin: 0 8px;
+    cursor: pointer;
     &.slick-active {
       background: $blue;
       &::after {
@@ -712,7 +713,7 @@ ul {
   font: 400 40px $myriad;
 }
 .prices__params {
-  padding: 0 18px;
+  margin: 0 18px;
   height: 320px;
 }
 .prices__param {
@@ -903,5 +904,10 @@ ul {
   display: block;
   margin: 0 13px;
 }
-
+.simplebar-track.vertical {
+  background: #000;
+}
+.simplebar-scrollbar {
+  background: $blue;
+}
 @import "media"

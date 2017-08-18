@@ -530,14 +530,14 @@ template {
   display: none; }
 
 /*!
- * 
+ *
  *             SimpleBar.js - v2.4.1
  *             Scrollbars, simpler.
  *             https://grsmto.github.io/simplebar/
- *             
+ *
  *             Made by Adrien Grsmto from a fork by Jonathan Nicol
  *             Under MIT License
- *         
+ *
  */
 [data-simplebar] {
   position: relative;
@@ -738,7 +738,8 @@ ul {
     height: 12px;
     background: #FFF;
     border-radius: 50%;
-    margin: 0 8px; }
+    margin: 0 8px;
+    cursor: pointer; }
     .top-slider__dots li.slick-active {
       background: #4876c3; }
       .top-slider__dots li.slick-active::after {
@@ -1271,7 +1272,7 @@ ul {
   font: 400 40px MYRIADPRO, sans-serif; }
 
 .prices__params {
-  padding: 0 18px;
+  margin: 0 18px;
   height: 320px; }
 
 .prices__param {
@@ -1290,6 +1291,7 @@ ul {
     background: url(../img/check.svg); }
 
 .prices__btn {
+  text-decoration: none;
   position: absolute;
   display: block;
   width: 303px;
@@ -1478,6 +1480,15 @@ ul {
 .map__social-link {
   display: block;
   margin: 0 13px; }
+  .simplebar-track.vertical {
+    background: #000;
+    width: 5px;
+  }
+  .simplebar-scrollbar {
+    background: #4876c3;
+    right: 0;
+    width: 100%;
+  }
 
 @media screen and (max-height: 930px) {
   .top__container {

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-бюро</title>
+  <link rel="stylesheet" href="./css/simplebar.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -22,10 +23,10 @@
         <img class="header__menu-close" src="./img/close.svg" alt="" />
         <a class="header__tel header__tel_mobile" href="tel:+74952205111"><img class="header__phone-icon" src="./img/phone.svg" alt="" /> +7 (495) 220 51 11</a>
         <nav class="header__menu">
-          <a class="header__link" href="#">Проекты</a>
+          <a class="header__link" href="#projects">Проекты</a>
           <a class="header__link" href="#">Услуги</a>
-          <a class="header__link" href="#">Цены</a>
-          <a class="header__link" href="#">Контакты</a>
+          <a class="header__link" href="#prices">Цены</a>
+          <a class="header__link" href="#contact">Контакты</a>
         </nav>
       </div>
     </div>
@@ -141,7 +142,7 @@
       </div>
     </div>
   </section>
-  <article class="project project_first">
+  <article id="projects" class="project project_first">
     <div class="project__container container">
       <!-- <div class="project__gallery">
 
@@ -314,7 +315,7 @@
       </div>
     </div>
   </article>
-  <article class="prices">
+  <article id="prices" class="prices">
     <h2 class="prices__title">Выберите сами, <span class="prices__title_smaller">каким будет</span> <br class="prices__title_br"/>
         <span class="prices__title_bold">ваш дизайн проект</span>
       </h2>
@@ -350,8 +351,17 @@
               <li class="prices__param">План монтажа</li>
               <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
               <li class="prices__param">Развертка встроенных шкафов </li>
+              <li class="prices__param">План пола</li>
+              <li class="prices__param">План мебели</li>
+              <li class="prices__param">План электрики</li>
+              <li class="prices__param">План потолков</li>
+              <li class="prices__param">План светового оборудования</li>
+              <li class="prices__param">План демонтажа</li>
+              <li class="prices__param">План монтажа</li>
+              <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
+              <li class="prices__param">Развертка встроенных шкафов </li>
             </ul>
-            <p class="prices__btn btn">Скачать пример проекта</p>
+            <a href="./files/test.txt" class="prices__btn btn" download>Скачать пример проекта</a>
           </div>
         </li>
         <li class="prices__offer">
@@ -380,7 +390,7 @@
               <li class="prices__param">Развертка санузлов с раскладкой плитки</li>
               <li class="prices__param">Развертка встроенных шкафов </li>
             </ul>
-            <p class="prices__btn btn">Скачать пример проекта</p>
+            <a href="./files/test.txt" class="prices__btn btn" download>Скачать пример проекта</a>
           </div>
         </li>
         <li class="prices__offer">
@@ -405,13 +415,13 @@
               <li class="prices__param">План потолков</li>
               <li class="prices__param">План светового оборудования</li>
             </ul>
-            <p class="prices__btn btn">Скачать пример проекта</p>
+            <a href="./files/test.txt" class="prices__btn btn" download>Скачать пример проекта</a>
           </div>
         </li>
       </ul>
     </div>
   </article>
-  <article class="contact">
+  <article id="contact" class="contact">
     <div class="contact__container container">
       <div class="contact__descr">
         <h3 class="contact__title"><span class="contact__title_large">Заявка</span> на <strong class="contact__title_bold">бесплатную</strong> консультацию</h3>
@@ -495,6 +505,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
   <script src="./js/slick.min.js" charset="utf-8"></script>
+  <script src="./js/simplebar.js" charset="utf-8"></script>
   <script src="./js/index.js" charset="utf-8"></script>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
