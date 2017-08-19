@@ -68,6 +68,11 @@
 }
 
 
+@media screen and (max-width: 1350px) {
+  .side-nav {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1170px) {
   .container {
