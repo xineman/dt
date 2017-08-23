@@ -148,7 +148,12 @@ $(function() {
       $(".prices__offer").find(".prices__price").slideDown();
     }
   });
-  $(".order-btn, .order-btn__mobile, .man__order").click(function() {
+  $(".project__order, .order-btn, .order-btn__mobile, .man__order").click(function() {
+    if ($(this).hasClass("project__order")) {
+      $(".popup__title").text("Заказать проект");
+    } else {
+      $(".popup__title").text("Обсудить проект");
+    }
     $(".popup").addClass("shown");
     $("body").addClass("stop");
   });
