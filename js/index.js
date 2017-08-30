@@ -65,6 +65,7 @@ $(function() {
   var triggersSlider = false;
   $(window).resize(function() {
     if (window.innerWidth<=1170 && !triggersSlider) {
+      $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
       $(".top__triggers").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -76,11 +77,13 @@ $(function() {
       });
       triggersSlider = true;
     } else if (window.innerWidth>1170 && triggersSlider) {
+      $(".top").height("auto");
       $(".top__triggers").slick("unslick");
       triggersSlider = false;
     }
   });
   if (window.innerWidth<=1170) {
+    $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
     $(".top__triggers").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -120,9 +123,7 @@ $(function() {
       $(this).toggleClass("prices__offer_active");
     });
   }
-  $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
   $(window).resize(function() {
-    $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
     if (window.innerWidth<=668) {
       if (!mobile) {
         $(".prices__offer").find(".prices__offer-content").slideUp();
