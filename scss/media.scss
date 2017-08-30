@@ -96,10 +96,20 @@
     margin-left: auto;
     position: relative;
   }
+  .top__trigger {
+    background: $dark;
+  }
+  .top__trigger-title {
+    color: $blue;
+    &::after {
+      background: $blue;
+    }
+  }
   .top__trigger:not(:first-child) {
     margin: 0;
   }
   .top__triggers__dots {
+    // display: none;
     position: absolute;
     bottom: 0;
     right: 14px;
@@ -571,7 +581,8 @@
     }
   }
   .order-btn__mobile {
-    margin-bottom: 0;
+    margin-bottom: 37px;
+    margin-top: 27px;
   }
   .man__room {
     left: 0;

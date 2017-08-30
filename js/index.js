@@ -70,8 +70,8 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        dots: true,
-        dotsClass: "top__triggers__dots",
+        dots: false,
+        // dotsClass: "top__triggers__dots",
         draggable: false
       });
       triggersSlider = true;
@@ -86,8 +86,8 @@ $(function() {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      dots: true,
-      dotsClass: "top__triggers__dots",
+      dots: false,
+      // dotsClass: "top__triggers__dots",
       draggable: false
     });
     triggersSlider = true;
@@ -120,7 +120,9 @@ $(function() {
       $(this).toggleClass("prices__offer_active");
     });
   }
+  $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
   $(window).resize(function() {
+    $(".top").height("calc(100vh - "+$(".order-btn__mobile").outerHeight(true)+"px)");
     if (window.innerWidth<=668) {
       if (!mobile) {
         $(".prices__offer").find(".prices__offer-content").slideUp();
@@ -208,4 +210,6 @@ $(function() {
       $(".side-nav__item").eq(index+1).trigger("click");
     }
   });
+
+
 });
